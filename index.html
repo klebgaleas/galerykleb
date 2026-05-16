@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=15">
+    <link rel="stylesheet" href="styles.css?v=17">
   </head>
   <body>
     <header class="site-header">
@@ -32,7 +32,17 @@
       <section class="hero">
         <div class="hero-copy">
           <p class="eyebrow">Archivo fotografico</p>
-          <h1>Galería de fotos by kleb.</h1>
+          <h1>Galer&iacute;a de fotos by kleb.</h1>
+          <a
+            class="playlist-link"
+            href="https://music.youtube.com/playlist?list=PLhe51ent-EjD_g1mRu_H6N2Hfk88pgiX-&si=GXDwSKFbdXkFSDKf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span class="playlist-icon" aria-hidden="true"></span>
+            <span class="playlist-track" aria-hidden="true"></span>
+            <span class="sr-only">Abrir playlist</span>
+          </a>
         </div>
         <div class="hero-side">
           <a class="hero-link" href="#gallery">Explorar galeria</a>
@@ -51,9 +61,9 @@
 
     <dialog id="photoDialog" class="dialog">
       <button id="closeDialog" class="close-button" type="button" aria-label="Cerrar">x</button>
-      <button id="expandPhoto" class="expand-button" type="button" aria-label="Expandir imagen">▭</button>
-      <button id="prevPhoto" class="gallery-nav gallery-nav-prev" type="button" aria-label="Foto anterior">‹</button>
-      <button id="nextPhoto" class="gallery-nav gallery-nav-next" type="button" aria-label="Siguiente foto">›</button>
+      <button id="expandPhoto" class="expand-button" type="button" aria-label="Expandir imagen">&#9645;</button>
+      <button id="prevPhoto" class="gallery-nav gallery-nav-prev" type="button" aria-label="Foto anterior">&lsaquo;</button>
+      <button id="nextPhoto" class="gallery-nav gallery-nav-next" type="button" aria-label="Siguiente foto">&rsaquo;</button>
       <div class="dialog-grid">
         <img id="dialogImage" alt="">
         <div class="dialog-copy">
@@ -64,6 +74,6 @@
       </div>
     </dialog>
 
-    <script src="app.js?v=15"></script>
+    <script src="app.js?v=17"></script>
   </body>
 </html>
