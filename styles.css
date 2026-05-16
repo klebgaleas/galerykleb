@@ -124,6 +124,65 @@ a {
   max-width: 920px;
 }
 
+.playlist-link {
+  align-items: center;
+  color: rgba(255, 255, 255, 0.84);
+  display: inline-flex;
+  gap: 12px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  margin-top: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.playlist-link:hover {
+  color: #ffffff;
+}
+
+.playlist-icon {
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.58);
+  border-radius: 999px;
+  display: inline-flex;
+  height: 24px;
+  justify-content: center;
+  width: 24px;
+}
+
+.playlist-icon::before {
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid currentColor;
+  border-top: 5px solid transparent;
+  content: "";
+  margin-left: 2px;
+}
+
+.playlist-track {
+  background: rgba(255, 255, 255, 0.3);
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  width: clamp(120px, 18vw, 240px);
+}
+
+.playlist-track::after {
+  background: rgba(255, 255, 255, 0.88);
+  content: "";
+  display: block;
+  height: 1px;
+  width: 34%;
+}
+
+.sr-only {
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
 .eyebrow {
   color: var(--muted);
   font-size: 0.76rem;
