@@ -25,18 +25,10 @@ const photos = [
     orientation: "portrait",
   },
   {
-    id: "barco",
-    title: "SHIP",
-    category: "b/n",
-    description: "bcn",
-    src: "images/barco.jpeg",
-    orientation: "portrait",
-  },
-  {
     id: "arbol",
     title: "HERE COMES THE SUN",
     category: "Colours",
-    description: "",
+    description: "Arbolito en ing.",
     src: "images/arbol.jpeg",
     orientation: "landscape",
   },
@@ -151,7 +143,7 @@ function toggleExpandedViewer() {
 function setExpandedViewer(isExpanded) {
   dialog.classList.toggle("dialog-fullscreen", isExpanded);
   document.body.classList.toggle("viewer-open", isExpanded);
-  expandPhoto.innerHTML = isExpanded ? "&minus;" : "▭";
+  expandPhoto.innerHTML = isExpanded ? "&minus;" : "&#9645;";
   expandPhoto.setAttribute("aria-label", isExpanded ? "Reducir imagen" : "Expandir imagen");
 
   if (isExpanded) {
