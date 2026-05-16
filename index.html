@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mi Galeria de Fotos</title>
+    <meta
+      name="description"
+      content="Galeria fotografica estatica preparada para publicarse gratis con GitHub Pages."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=15">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="topbar" aria-label="Navegacion principal">
+        <a class="brand" href="index.html" aria-label="Inicio">
+          <img class="brand-logo" src="images/logo-kleb.png" alt="">
+          <span>kleb</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Inicio</a>
+          <a href="#gallery">Galeria</a>
+          <a href="#about">Sobre mi</a>
+          <a href="mailto:hola@example.com">Contacto</a>
+        </div>
+        <a class="nav-button" href="#gallery">Ver fotos</a>
+      </nav>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Archivo fotografico</p>
+          <h1>Galería de fotos by kleb.</h1>
+        </div>
+        <div class="hero-side">
+          <a class="hero-link" href="#gallery">Explorar galeria</a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="gallery" id="gallery" aria-live="polite"></section>
+
+      <section class="about" id="about">
+        <p class="eyebrow">Sobre mi</p>
+        <p><a href="https://www.instagram.com/klleb__?igsh=MTM5cHB1cDV6Zm9mOQ==" target="_blank" rel="noreferrer">@klleb__</a></p>
+      </section>
+    </main>
+
+    <dialog id="photoDialog" class="dialog">
+      <button id="closeDialog" class="close-button" type="button" aria-label="Cerrar">x</button>
+      <button id="expandPhoto" class="expand-button" type="button" aria-label="Expandir imagen">▭</button>
+      <button id="prevPhoto" class="gallery-nav gallery-nav-prev" type="button" aria-label="Foto anterior">‹</button>
+      <button id="nextPhoto" class="gallery-nav gallery-nav-next" type="button" aria-label="Siguiente foto">›</button>
+      <div class="dialog-grid">
+        <img id="dialogImage" alt="">
+        <div class="dialog-copy">
+          <p id="dialogCategory" class="dialog-category"></p>
+          <h2 id="dialogTitle"></h2>
+          <p id="dialogDescription"></p>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="app.js?v=15"></script>
+  </body>
+</html>
